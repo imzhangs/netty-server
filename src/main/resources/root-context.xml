@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+				http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+				http://www.springframework.org/schema/context
+				http://www.springframework.org/schema/context/spring-context-4.2.xsd
+				http://www.springframework.org/schema/tx 
+				http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+	
+	
+	<!-- 通过component-scan 让Spring扫描 base-package 下的所有的类，需要注入容器的代码注解生效 -->
+	<context:component-scan base-package="com.xxx.netty.*"/>
+	<context:component-scan base-package="com.xxx.rpc.*"/>
+	
+	 <!-- spring的属性加载器，加载properties文件中的属性 -->
+	 <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		 <property name="ignoreResourceNotFound" value="false" />
+	     <property name="properties" ref="configProperties" />
+	 </bean>
+     <!-- <context:property-placeholder location="/WEB-INF/config.properties"/> -->
+
+      <!--创建 MYSQL jdbc数据源 -->
+      <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="initialSize" value="${jdbc.initialSize}" />
+		<property name="maxActive" value="${jdbc.maxActive}" />
+		<property name="maxWait" value="${jdbc.maxWait}" />
+		<property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}" />
+		<property name="minEvictableIdleTimeMillis" value="${jdbc.minEvictableIdleTimeMillis}" />
+		<property name="validationQuery" value="${jdbc.validationQuery}" />
+		<property name="testWhileIdle" value="${jdbc.testWhileIdle}" />
+		<property name="testOnBorrow" value="${jdbc.testOnBorrow}" />
+		<property name="testOnReturn" value="${jdbc.testOnReturn}" />
+		<property name="poolPreparedStatements" value="${jdbc.poolPreparedStatements}" />
+		<property name="maxPoolPreparedStatementPerConnectionSize" value="${jdbc.maxPoolPreparedStatementPerConnectionSize}" />
+		<property name="removeAbandonedTimeout" value="${jdbc.removeAbandonedTimeout}" />
+		<property name="removeAbandoned" value="${jdbc.removeAbandoned}" />
+      </bean>
+      
+      
+       <!-- 创建SqlSessionFactory，同时指定数据源-->
+	   <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	      <property name="dataSource" ref="dataSource" />
+	      <property  name="mapperLocations"  value="classpath*:/mybatis/mapper/*/*.xml"/>  
+	   </bean>  
+
+		<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate" scope="prototype">  
+	        <constructor-arg index="0" ref="sqlSessionFactory"/>  
+	    </bean>
+	    
+	       
+	  	<!-- Redis 分布式异步数据源配置
+	    <bean id="redisInitBean" class="com.xxx.netty.common.redis.RedisInitBean" >
+	        <constructor-arg index="0" type="List">
+	            <list>
+	                <value>${redis.1}</value>
+	            </list>
+	        </constructor-arg>    
+	        
+	        <constructor-arg index="1" type="long"> <value>10000</value></constructor-arg>    
+	        <constructor-arg index="2" type="int"><value>200</value></constructor-arg>    
+	        <constructor-arg index="3" type="Boolean"> <value>true</value>  </constructor-arg>        
+	    </bean> -->
+	  
+	    
+	    
+		<bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+	        <property name="locations">
+	            <list>
+	                <value>classpath:/config/datasource.properties</value>
+	                <value>classpath:/config/server-config.properties</value>
+	                <value>classpath:/config/redis.properties</value>
+	                <value>classpath:/config/rpc.properties</value>
+	            </list>
+	        </property>
+			<property name="fileEncoding" value="utf-8" />
+	    </bean>
+	 
+	
+	<!-- 导入bean实体注入 -->
+	 <import resource="classpath:bean-context.xml"></import>  
+	 
+	
+</beans>

@@ -1,0 +1,80 @@
+2017-01-02 17:26:09,677 DEBUG [com.xxx.netty.run.SecureChatServer] - SSL TCP server on port:8992
+ 2017-01-02 17:43:25,298 DEBUG [com.xxx.netty.run.SecureChatServer] - SSL TCP server started on port:8992
+ 2017-01-02 17:43:35,393 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:49693
+ 2017-01-02 17:43:41,127 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[11]1
+ 2017-01-02 17:43:41,565 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[11]1
+ 2017-01-02 17:43:41,743 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[11]1
+ 2017-01-02 17:43:51,428 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:49733
+ 2017-01-02 17:44:04,282 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[22]@all:[aaaaa]
+ 2017-01-02 17:44:14,605 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[22]@all:12312
+ 2017-01-02 17:51:31,843 DEBUG [com.xxx.netty.run.SecureChatServer] - SSL TCP server started on port:8992
+ 2017-01-02 17:53:25,887 DEBUG [com.xxx.netty.run.SecureChatServer] - SSL TCP server started on port:8992
+ 2017-01-02 17:53:31,252 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50009
+ 2017-01-02 17:53:38,310 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50046
+ 2017-01-02 17:53:46,674 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[22]@all:hello
+ 2017-01-02 17:54:17,169 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[22]@all:hello
+ 2017-01-02 17:55:00,134 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[11]]@all:hello
+ 2017-01-02 17:56:16,338 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50121
+ 2017-01-02 17:56:45,193 DEBUG [com.xxx.netty.run.SecureChatServer] - SSL TCP server started on port:8992
+ 2017-01-02 17:57:01,648 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50240
+ 2017-01-02 17:57:12,420 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50284
+ 2017-01-02 17:57:20,718 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]1asdfasdf
+ 2017-01-02 17:57:22,142 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]1asdfasdf
+ 2017-01-02 17:57:22,342 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]1asdfasdf
+ 2017-01-02 17:57:22,521 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]1asdfasdf
+ 2017-01-02 17:57:27,039 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@all:1
+ 2017-01-02 17:58:08,246 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@login:aaaa
+ 2017-01-02 17:58:15,054 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@login:111
+ 2017-01-02 17:58:19,895 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@all:123
+ 2017-01-02 17:58:33,519 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@all:232
+ 2017-01-02 17:58:56,653 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@all:232
+ 2017-01-02 17:59:19,089 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50356
+ 2017-01-02 17:59:42,622 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[gdfsgdf]@all:asdffff
+ 2017-01-02 18:00:43,044 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[gdfsgdf]@all:asdffff
+ 2017-01-02 18:01:13,855 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50418
+ 2017-01-02 18:01:21,890 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123123]@all:12322
+ 2017-01-02 18:01:47,071 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123123]@all:12322
+ 2017-01-02 18:01:58,847 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123123]@all:12322
+ 2017-01-02 18:01:59,364 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123123]@all:12322
+ 2017-01-02 18:01:59,548 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123123]@all:12322
+ 2017-01-02 18:01:59,727 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123123]@all:12322
+ 2017-01-02 18:01:59,897 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123123]@all:12322
+ 2017-01-02 18:02:00,081 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123123]@all:12322
+ 2017-01-02 18:02:01,408 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[gdfsgdf]@all:asdffff
+ 2017-01-02 18:02:01,593 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[gdfsgdf]@all:asdffff
+ 2017-01-02 18:02:01,762 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[gdfsgdf]@all:asdffff
+ 2017-01-02 18:02:01,948 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[gdfsgdf]@all:asdffff
+ 2017-01-02 18:02:02,117 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[gdfsgdf]@all:asdffff
+ 2017-01-02 18:10:58,286 DEBUG [com.xxx.netty.run.SecureChatServer] - SSL TCP server started on port:8992
+ 2017-01-02 18:11:05,370 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50653
+ 2017-01-02 18:11:47,854 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50702
+ 2017-01-02 18:12:11,787 DEBUG [com.xxx.netty.run.SecureChatServer] - SSL TCP server started on port:8992
+ 2017-01-02 18:12:22,429 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50782
+ 2017-01-02 18:13:06,148 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50831
+ 2017-01-02 18:13:12,267 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}@login:123
+ 2017-01-02 18:13:35,662 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50874
+ 2017-01-02 18:13:35,676 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}@login:www
+ 2017-01-02 18:13:47,097 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[www]@all:123
+ 2017-01-02 18:14:08,952 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@all:334546
+ 2017-01-02 18:15:00,788 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:50934
+ 2017-01-02 18:15:00,802 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}@login:ssss
+ 2017-01-02 18:15:18,649 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[ssss]@all:ssss
+ 2017-01-02 18:16:54,134 DEBUG [com.xxx.netty.run.SecureChatServer] - SSL TCP server started on port:8992
+ 2017-01-02 18:17:01,058 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:51040
+ 2017-01-02 18:17:01,073 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}@login:123
+ 2017-01-02 18:17:11,549 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:51078
+ 2017-01-02 18:17:11,560 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}@login:112333
+ 2017-01-02 18:17:20,456 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[112333]@all:hello
+ 2017-01-02 18:18:02,246 INFO [com.xxx.netty.handle.SecureChatServerHandler] - connected :{}/127.0.0.1:51124
+ 2017-01-02 18:18:02,258 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}@login:dddd
+ 2017-01-02 18:18:28,729 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[dddd]@to:123:累好啊
+ 2017-01-02 18:19:25,904 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@to:dddd  有木有 食饭
+ 2017-01-02 18:19:41,695 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@to:123:有木有示范啊
+ 2017-01-02 18:19:53,391 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@to:123:有木有示范啊
+ 2017-01-02 18:20:05,806 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@to:dddd:有木有示范啊
+ 2017-01-02 18:22:21,406 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[dddd]@to:112333:在搞乜亿
+ 2017-01-02 18:22:47,270 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[112333]@to:123:丢你楼某哇
+ 2017-01-02 18:23:01,638 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@to:ddd: ??
+ 2017-01-02 18:23:16,254 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@to:dddd:？？
+ 2017-01-02 18:23:32,990 INFO [com.xxx.netty.handle.SecureChatServerHandler] - c2s received=>> :{}[123]@to:112333:丢你楼某哇
+ 
